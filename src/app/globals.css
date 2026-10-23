@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Inter:wght@400;500;600;700;800&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-inter: "Inter";
+  --font-amiri: "Amiri";
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #f7faf8; color: #183128; font-family: var(--font-inter), Arial, sans-serif; }
+button, input, select, textarea { font: inherit; }
+button, a { -webkit-tap-highlight-color: transparent; }
+a { color: inherit; text-decoration: none; }
+button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 3px solid #8ed4b0; outline-offset: 3px; }
+.arabic { font-family: var(--font-amiri), serif; direction: rtl; unicode-bidi: isolate; }
+.page-grid { background-image: radial-gradient(#087f5b12 1px, transparent 1px); background-size: 19px 19px; }
+.glass { background: rgba(255,255,255,.82); backdrop-filter: blur(14px); }
+@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; scroll-behavior: auto !important; transition-duration: .01ms !important; } }
